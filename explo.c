@@ -31,6 +31,5 @@ if (strcmp(passage2,"continuer")==0){
 printf("vous arrivez au niveau d'une ferme, ses habitants semblent absent ou occuper\n");
 
 };
-
 return 0;
 }
