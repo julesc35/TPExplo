@@ -3,30 +3,26 @@
 #include <stdlib.h>
 
 
-int choix;
-int choixinter;
-int choixfin;
-
 int main(){
-int endurence = 10;
+char passage1 [20] = "je rentre";
+char passage2 [20] = "je continue";
+char choix[20];
 
 printf("\n");
+printf("vous arrivez devant un cheateau que faites-vous vous voulez rentrer [1] ou continuer votre chemin [2]?\n");
+printf("pour continuer le chemin taper: je rentre 	pour continuer son chemin, tapez: continuer\n");
+scanf("%s", &choix);
 
-printf("vous arrivez devant un cheateau que faites-vous ?\n");
-printf("je rentre: 1  je continue mon chemin: 2	se reposer\n");
-scanf("%d", &choix);
 
-
-if (choix == 1){
-	int endurence = -1;
+if (strcmp(passage1,"je rentre")==0) {
 printf("vous rentrez dans le chateau, vous etes dans la salle principale, aucunes richesses à l'horizon, tout est desert\n");
-	return choix;
-}
 
-if (choix== 2){
-printf("vous arrivez au niveau d'une ferme, ses habitants semblent absent ou occuper\n")
-	return choix;
-}
+};
+
+if (strcmp(passage2,"continuer")==0){
+printf("vous arrivez au niveau d'une ferme, ses habitants semblent absent ou occuper\n");
+
+};
 
 return 0;
 }
